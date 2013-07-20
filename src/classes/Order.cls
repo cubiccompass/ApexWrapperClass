@@ -1,7 +1,7 @@
 public with sharing class Order{
 	public ID Id;
 	public Order__c record;
-	public static string SFIELDS = 'Id, Name, Total_Amount__c, CustomerAccountId__c,Tax_Rate__c';
+	public static string SFIELDS = SObjectFields.ORDER_FIELDS;
      	
 	public Order withSObject(Order__c r){
 		record = r;

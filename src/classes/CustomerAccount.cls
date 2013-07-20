@@ -1,7 +1,7 @@
 public with sharing class CustomerAccount {
 	public ID Id;
 	public Account record;
-	public static string SFIELDS = 'Id,Name,BillingStreet,BillingCity,BillingState,BillingPostalCode,BillingCountry';
+	public static string SFIELDS = SObjectFields.ACCOUNT_FIELDS;
     
 	public CustomerAccount withSObject(Account acct){
 		record = acct;
